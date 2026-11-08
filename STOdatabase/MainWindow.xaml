@@ -1,0 +1,28 @@
+﻿<Window x:Class="STOdatabase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STOdatabase"
+        mc:Ignorable="d"
+        Title="Управление базой данных СТО" Height="450" Width="800">
+    <Grid Background="#FFCCC782">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Label Grid.ColumnSpan="2" Content="База данных СТО" HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <Image Margin="0,67,10,180" Source="/stoLogo.jpg" Stretch="Fill" Grid.RowSpan="2"/>
+        <Button x:Name="btnDatabase" Grid.Column="1" Content="База данных" HorizontalAlignment="Left" Height="42" Margin="133,67,0,0" VerticalAlignment="Top" Width="133" Click="btnDatabase_Click"/>
+        <Button x:Name="btnAddZakaz" Grid.Column="1" Content="Добавить заказы" HorizontalAlignment="Left" Height="42" Margin="133,140,0,0" VerticalAlignment="Top" Width="133" Click="btnAddZakaz_Click"/>
+        <Button x:Name="btnEditZakaz" Grid.Column="1" Content="Редактировать заказы" HorizontalAlignment="Left" Height="42" Margin="133,217,0,0" VerticalAlignment="Top" Width="133" Grid.RowSpan="2" Click="btnEditZakaz_Click"/>
+        <Button x:Name="btnExit" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="133,67,0,0" VerticalAlignment="Top" Width="133" Click="btnExit_Click" Grid.Row="1" Content="Выход"/>
+
+    </Grid>
+
+</Window>
